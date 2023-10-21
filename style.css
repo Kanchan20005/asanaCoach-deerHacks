@@ -1,50 +1,51 @@
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.428571429;
-    color: #333333;
-    background-repeat: repeat;
-    margin: 20px;
- }
+  background-image: url('rm283-adj-013_2.jpg');
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+  background-repeat: repeat;
+  margin: 20px;
+}
 
 
- div#topHeaderRow {
-    background-color: #222222;
-    font-size: 1.5em;
-    height: 3em;
-    line-height: 3em;
-    padding-right: 1em;
-    text-align: right;
- }
- nav  ul{
-    list-style-type: none;
- }
- nav  ul li {
-    display: inline;
- }
- nav  ul li  a{
-    text-decoration: none;
- }
- div#topHeaderRow  a {
-    color: #999999;
-    margin-right: 2em;
- }
+div#topHeaderRow {
+  background-color: #222222;
+  font-size: 1.5em;
+  height: 3em;
+  line-height: 3em;
+  padding-right: 1em;
+  text-align: right;
+}
+nav  ul{
+  list-style-type: none;
+}
+nav  ul li {
+  display: inline;
+}
+nav  ul li  a{
+  text-decoration: none;
+}
+div#topHeaderRow  a {
+  color: #999999;
+  margin-right: 2em;
+}
 
- .item1 {
-   grid-area: video1;
- }
- .item2 {
-   grid-area: example1;
- }
- .item3 {
-   grid-area: video2;
- }
- .item4 {
-   grid-area: example2;
- }
- .item5 {
-   grid-area: buttons;
- }
+.item1 {
+  grid-area: video1;
+}
+.item2 {
+  grid-area: example1;
+}
+.item3 {
+  grid-area: video2;
+}
+.item4 {
+  grid-area: example2;
+}
+.item5 {
+  grid-area: buttons;
+}
 
 .grid-container {
   display: grid;
@@ -55,4 +56,16 @@ body {
   gap: 10px;
   padding: 10px;
   text-align: center;
+}
+
+
+#show_use_time, #show_besy_time {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
 }
