@@ -1,0 +1,18 @@
+body {
+  background-image: url('rm283-adj-013_2.jpg');
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #333333;
+  background-repeat: repeat;
+  margin: 20px 10%;
+}
+
+div#topHeaderRow {
+  background-color: #2D96B2;
+  font-size: 1.5em;
+  height: 3em;
+  line-height: 3em;
+  padding-right: 1em;
+  text-align: center;
+}
