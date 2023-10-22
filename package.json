@@ -1,0 +1,19 @@
+{
+  "name": "dearborn_hackathon_project",
+  "version": "1.0.0",
+  "description": "Yo",
+  "main": "posenet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow-models/pose-detection": "^2.1.3",
+    "@tensorflow/tfjs-backend-wasm": "^4.12.0",
+    "@tensorflow/tfjs-backend-webgl": "^4.12.0",
+    "@tensorflow/tfjs-converter": "^4.12.0",
+    "@tensorflow/tfjs-core": "^4.12.0"
+  }
+}

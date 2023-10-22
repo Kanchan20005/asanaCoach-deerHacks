@@ -10,6 +10,7 @@
   <script defer src =”asanacoach.py”></script>
   <script defer src =Cam.py”></script>
   <script defer src =ImageModel.py”></script>
+<<<<<<< HEAD
   <style>
   .button {
     display: inline-block;
@@ -29,6 +30,13 @@
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
   </style>
+=======
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+  
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+>>>>>>> 365ef3fe050f06c2dc0dd6b647f547c993ec8bcb
 </head>
 
 <body>
@@ -37,10 +45,10 @@
       <ul>
         <!-- the item in the top and if the user click the words, it will take the user to the currect position -->
         <li><a href="#section1">Video</a></li>
-        <li><a href="#section2">result</a></li>
-        <li><a href="#section3">Section 3: </a></li>
-        <li><a href="#section4">Section 4: </a></li>
-        <li><a href="#section5">Section 5: </a></li>
+        <li><a href="#section2">Results</a></li>
+        <li><a href="#section3">About </a></li>
+        <!-- <li><a href="#section4">Section 4: </a></li>
+        <li><a href="#section5">Section 5: </a></li> -->
       </ul>
     </nav>
   </div>
@@ -62,7 +70,8 @@
       <div class="grid-container">
         <div class="item1">
           <!-- taking video -->
-          <video id="cameraStream" autoplay playsinline muted></video>
+          <video id="cameraStream" autoplay playsinline muted><script src='posenet.js'></script></video>
+          
         </div>
         <div class="item2">
           <!-- give the example that what should user to do -->
@@ -75,7 +84,19 @@
         </div>
         <div class="item4">
           <!-- give the example that what should user to do -->
+<<<<<<< HEAD
           <div id="selectedValue2">
+=======
+          <video width="320" height="2" id="example2">
+              <source src="movie.ogg" type="video/ogg">
+              </video>
+            </div>
+            <div class="item5">
+              <!-- the button start and stop -->
+              <button id="startButton">Start Recording</button>
+              <button id="stopButton" disabled>Stop Recording</button>
+            </div>
+>>>>>>> 365ef3fe050f06c2dc0dd6b647f547c993ec8bcb
           </div>
         </div>
         <div class="item5">
@@ -95,7 +116,14 @@
     </section>
 
 
+<<<<<<< HEAD
     <script src="script.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
   </body>
   </html>
+=======
+        <script src="posenet.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+      </body>
+      </html>
+>>>>>>> 365ef3fe050f06c2dc0dd6b647f547c993ec8bcb
