@@ -6,12 +6,36 @@
   <link rel="stylesheet" href="start_style.css">
   <script scr="start.js"></script>
   <title>Login Page</title>
+  <style>
+  .box {
+    text-align: center;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  .button:hover {
+    background-color: #2980b9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  </style>
 </head>
 <body>
   <form action="work.html" method="get">
 
     <div id = "topHeaderRow">
-      <select name="posture" id="posture" onchange="updateImage()" style="width:70%;">
+      <label for="selectedOption">First name:</label>
+      <select name="selectedOption" id="selectedOption" onchange="updateImage()" style="width:70%;">
         <option value="tree">Tree <img src="tree.jpg" alt="tree photo"></option>
         <option value="cobra">Cobra <img src="cobra.jpg" alt="cobra photo"></option>
         <option value="warrior">Warrior <img src="warrior.jpg" alt="warrior photo"></option>
@@ -21,19 +45,20 @@
     <table>
       <tr>
         <td id="text" style="width:80%;">
-          <p></p>
+          <p>You may have heard that good posture is essential for good health, but do you know why? Posture refers to how you position your body when you’re sitting, standing, or lying down. Your posture is the result of habits formed over the course of years.</p><br>
+          <p>Many people may recognize poor posture in others without realizing how their own falls short. If you look around at co-workers at the office, you’ll likely find them hunched over at their desks. Learn why good posture matters — and what you can do to improve yours.</p><br>
+          <p>Good posture is the proper alignment of your body when standing or sitting. Correct positioning involves training yourself to hold your body against gravity with the least strain and tension on supportive structures, such as your muscles and ligaments. Proper posture keeps your bones and joints in optimal alignment and decreases wear and tear on supportive structures.</p><br>
+          <p>The proper alignment of your spine allows you to move easily so that your body supports your weight without strain. Poor posture can place stress on your tendons, muscles, and ligaments, leading to neck and back pain.</p><br>
         </td>
         <td id="image">
-          <img id="selectedImage" src="" alt="Selected Image">
+          <img id="selectedImage" src="tree.jpg" alt="Selected Image" style="width: 90%; text-align: center">
         </td>
       </tr>
     </table>
 
-
-
-
-
-    <input class="button" type="submit" style="margin: 20px"></input>
+    <div class="box">
+      <button class="button" type="submit">Start Pose</button>
+    </div>
   </form>
   <script scr="start.js"></script>
 

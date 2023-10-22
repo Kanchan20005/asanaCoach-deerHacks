@@ -10,6 +10,44 @@ let timerInterval;
 let startTime;
 let isRunning = false;
 let bestTimeString = "00:00:00";
+let i = 0;
+
+let imageContainer1 = document.getElementById("selectedValue1");
+let imageContainer2 = document.getElementById("selectedValue2");
+
+// Create an img element
+let img = document.createElement("img");
+
+function show() {
+  let x = window.location.search;
+  if (/tree/gi.test(x)) {
+    // Set the src attribute of the img element to the image file path
+    img.src = "tree.jpg";
+    img.alt = "tree photo";
+  }
+  else if (/cobra/gi.test(x)) {
+    // Set the src attribute of the img element to the image file path
+    img.src = "cobra.jpg";
+    img.alt = "cobra photo";
+  }
+  else if (/warrior/gi.test(x)) {
+    // Set the src attribute of the img element to the image file path
+    img.src = "warrior.jpg";
+    img.alt = "warrior photo";
+  }
+  else if (/shoulderstand/gi.test(x)) {
+    // Set the src attribute of the img element to the image file path
+    img.src = "shoulderstand.jpg";
+    img.alt = "shoulderstand photo";
+  }
+  img.style = "height: 500px";
+  // Append the img element to the div
+  imageContainer1.appendChild(img);
+  imageContainer2.appendChild(img);
+};
+
+show();
+
 
 //if user click start it will record the video
 startButton.addEventListener('click', function () {
@@ -49,7 +87,6 @@ startButton.addEventListener('click', function () {
 
 //if the user click stop, the recording will stop and show the video that the user displayed
 stopButton.addEventListener('click', function () {
-
   startButton.disabled = false;
   stopButton.disabled = true;
   mediaRecorder.stop();
@@ -64,34 +101,34 @@ stopButton.addEventListener('click', function () {
 });
 
 function updateClock() {
-    let currentTime = new Date();
-    let elapsedTime = new Date(currentTime - startTime);
-    let hours = elapsedTime.getUTCHours();
-    let minutes = elapsedTime.getUTCMinutes();
-    let seconds = elapsedTime.getUTCSeconds();
+  let currentTime = new Date();
+  let elapsedTime = new Date(currentTime - startTime);
+  let hours = elapsedTime.getUTCHours();
+  let minutes = elapsedTime.getUTCMinutes();
+  let seconds = elapsedTime.getUTCSeconds();
 
-    let timeString = padNumber(hours) + ":" + padNumber(minutes) + ":" + padNumber(seconds);
-    document.getElementById("show_use_time").innerText = "Pose Time: " + timeString;
+  let timeString = padNumber(hours) + ":" + padNumber(minutes) + ":" + padNumber(seconds);
+  document.getElementById("show_use_time").innerText = "Pose Time: " + timeString;
 }
 
 function startTimer() {
-    setTimeout(() => { document.getElementById("video_recording").innerHTML = "Video Recording \(Video is being recorded\)."; }, 2000);
-    if (!isRunning) {
-        isRunning = true;
-        startTime = new Date();
-        timerInterval = setInterval(updateClock, 1000);
-    }
+  setTimeout(() => { document.getElementById("video_recording").innerHTML = "Video Recording \(Video is being recorded\)."; }, 2000);
+  if (!isRunning) {
+    isRunning = true;
+    startTime = new Date();
+    timerInterval = setInterval(updateClock, 1000);
+  }
 }
 
 function stopTimer() {
-    if (isRunning) {
-        isRunning = false;
-        clearInterval(timerInterval);
-    }
+  if (isRunning) {
+    isRunning = false;
+    clearInterval(timerInterval);
+  }
 }
 
 function padNumber(number) {
-    return (number < 10) ? "0" + number : number;
+  return (number < 10) ? "0" + number : number;
 }
 
 
