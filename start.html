@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="start_style.css">
+  <script scr="start.js"></script>
+  <title>Login Page</title>
+</head>
+<body>
+  <form action="work.html" method="get">
+
+    <div id = "topHeaderRow">
+      <select name="posture" id="posture" onchange="updateImage()" style="width:70%;">
+        <option value="tree">Tree <img src="tree.jpg" alt="tree photo"></option>
+        <option value="cobra">Cobra <img src="cobra.jpg" alt="cobra photo"></option>
+        <option value="warrior">Warrior <img src="warrior.jpg" alt="warrior photo"></option>
+        <option value="shoulderstand">Shoulderstand <img src="shoulderstand.jpg" alt="shoulderstand photo"></option>
+      </select>
+    </div>
+    <table>
+      <tr>
+        <td id="text" style="width:80%;">
+          <p></p>
+        </td>
+        <td id="image">
+          <img id="selectedImage" src="" alt="Selected Image">
+        </td>
+      </tr>
+    </table>
+
+
+
+
+
+    <input class="button" type="submit" style="margin: 20px"></input>
+  </form>
+  <script scr="start.js"></script>
+
+</body>
+</html>
