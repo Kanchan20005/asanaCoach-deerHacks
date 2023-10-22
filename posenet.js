@@ -36,18 +36,16 @@ function draw() {
     if(singlePose){
         for(let i=0; i<singlePose.keypoints.length; i++){
             ellipse(singlePose.keypoints[i].position.x, singlePose.keypoints[i].position.y,10);
+            // textSize(12);
+            // fill(255);
+            // text(`x: ${keypoints[i].position.x.toFixed(2)}`, keypoints[i].position.x + 15, keypoints[i].position.y - 5);
+            // text(`y: ${keypoints[i].position.y.toFixed(2)}`, keypoints[i].position.y + 15, keypoints[i].position.y + 15);
         }
         stroke(255,255,255);
         strokeWeight(2);
         for(let j=0; j<skeleton.length; j++){
             line(skeleton[j][0].position.x, skeleton[j][0].position.y, skeleton[j][1].position.x, skeleton[j][1].position.y)
+
         }
-
-
-
-        
     }
-
-    
-
 }

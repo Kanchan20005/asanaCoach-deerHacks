@@ -10,6 +10,11 @@
   <script defer src =”asanacoach.py”></script>
   <script defer src =Cam.py”></script>
   <script defer src =ImageModel.py”></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+  
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
 </head>
 
 <body>
@@ -43,7 +48,8 @@
       <div class="grid-container">
         <div class="item1">
           <!-- taking video -->
-          <video id="cameraStream" autoplay playsinline muted></video>
+          <video id="cameraStream" autoplay playsinline muted><script src='posenet.js'></script></video>
+          
         </div>
         <div class="item2">
           <!-- give the example that what should user to do -->
